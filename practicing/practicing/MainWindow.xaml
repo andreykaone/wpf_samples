@@ -5,17 +5,234 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:practicing"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <DockPanel>
-        <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem Header="_New" />
-                <MenuItem Header="_Open" />
-                <MenuItem Header="_Save" />
-                <Separator />
-                <MenuItem Header="_Exit" />
-            </MenuItem>
-        </Menu>
-        <TextBox AcceptsReturn="True" />
-    </DockPanel>
+        Title="MainWindow" Height="350" Width="580">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Padding="0 0 0 20" Grid.Column="0">
+            <StackPanel >
+
+                <!-- Name -->
+                <Border Padding="0 10"
+                    Style="{StaticResource BorderKindOfGreyGradientStyle}" >
+                    <TextBlock  Text="Starter"
+                            TextAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- Price -->
+                <Border Padding="0 12">
+                    <TextBlock Text="$25"
+                           FontSize="30"
+                           Foreground="{StaticResource TextColorBrush}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- per month -->
+                <Border Padding="0 3"
+                    Background="{StaticResource Top3BlockColorBrush}">
+                    <TextBlock Text="per month"
+                           FontSize="14"
+                           Foreground="{StaticResource TextColorBrush}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- Advantages -->
+                <Border Padding="0 10 0 10">
+                    <StackPanel>
+                        <TextBlock Text="5GB free storage"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Filter by person"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="iOS and Android Apps"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Add unlimited images"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="24/7 support"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                               HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+
+        <Border Padding="0 0 0 20" Grid.Column="1">
+            <StackPanel >
+
+                <!-- Name -->
+                <Border Padding="0 10"
+                    Style="{StaticResource BorderBlueGradientStyle}" >
+                    <TextBlock  Text="Advanced"
+                            TextAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- Price -->
+                <Border Padding="0 12">
+                    <TextBlock Text="$40"
+                           FontSize="30"
+                           Foreground="{StaticResource TextColorBrush}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- per month -->
+                <Border Padding="0 3"
+                    Background="{StaticResource Top3BlockColorBrush}">
+                    <TextBlock Text="per month"
+                           FontSize="14"
+                           Foreground="{StaticResource TextColorBrush}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- Advantages -->
+                <Border Padding="0 10 0 10">
+                    <StackPanel>
+                        <TextBlock Text="50GB free storage"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Filter by anything"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Create templates"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="External integration"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Full API"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                               HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+
+        <Border Padding="0 0 0 20" Grid.Column="2">
+            <StackPanel >
+
+                <!-- Name -->
+                <Border Padding="0 10"
+                    Style="{StaticResource BorderRedGradientStyle}" >
+                    <TextBlock  Text="Pro"
+                            TextAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- Price -->
+                <Border Padding="0 12">
+                    <TextBlock Text="$70"
+                           FontSize="30"
+                           Foreground="{StaticResource TextColorBrush}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- per month -->
+                <Border Padding="0 3"
+                    Background="{StaticResource Top3BlockColorBrush}">
+                    <TextBlock Text="per month"
+                           FontSize="14"
+                           Foreground="{StaticResource TextColorBrush}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </TextBlock>
+                </Border>
+
+                <!-- Advantages -->
+                <Border Padding="0 10 0 10">
+                    <StackPanel>
+                        <TextBlock Text="Unlimited storage"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Unlimited guests"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Private boards"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Activity stats"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                        <TextBlock Text="Profile custmization"
+                                   Padding="0 5 0 5"
+                                   FontSize="10"
+                               HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextColorBrush}"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+
+
 </Window>
